@@ -1,6 +1,8 @@
+
+
 .idea
 *.iml
 *.apk
 target
-allure-results
 allure-report
+allure-resultsa
