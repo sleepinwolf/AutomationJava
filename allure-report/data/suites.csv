@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Feb 11 12:01:34 EET 2020","Tue Feb 11 12:01:53 EET 2020","19019","","Shopping list","","Add shopping list","","Add shopping list",""
-"passed","Tue Feb 11 12:01:53 EET 2020","Tue Feb 11 12:02:30 EET 2020","37227","","Shopping list","","Delete the shopping list","","Delete the shopping list",""
