@@ -1,0 +1,43 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Shopping list",
+    "children" : [ {
+      "name" : "Add shopping list",
+      "children" : [ {
+        "name" : "Add shopping list",
+        "uid" : "47ce039e07e40d39",
+        "parentUid" : "858366ee27c07fcf7c240dcafc336a3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581415294460,
+          "stop" : 1581415313479,
+          "duration" : 19019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "AOSP on IA Emulator", "9586", "9" ]
+      } ],
+      "uid" : "858366ee27c07fcf7c240dcafc336a3c"
+    }, {
+      "name" : "Delete the shopping list",
+      "children" : [ {
+        "name" : "Delete the shopping list",
+        "uid" : "6426e3498ed43402",
+        "parentUid" : "89b46cca5c713cfd2d8c199dc6be1c67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1581415313610,
+          "stop" : 1581415350837,
+          "duration" : 37227
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "AOSP on IA Emulator", "9586", "9" ]
+      } ],
+      "uid" : "89b46cca5c713cfd2d8c199dc6be1c67"
+    } ],
+    "uid" : "caa1a8a0920243c7debcd27c8733bb45"
+  } ]
+}

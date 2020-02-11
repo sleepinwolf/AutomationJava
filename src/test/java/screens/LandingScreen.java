@@ -6,21 +6,21 @@ import static testUI.Utils.By.*;
 import static testUI.elements.TestUI.E;
 
 public class LandingScreen {
-    private final UIElement shoppingListInput = E(byAndroidUIAutomator("textContains(\"Add a shopping list\")"));
-    private final UIElement inputShoppingList = E(byId("editText"));
-    private final UIElement addListButton = E(byId("android:id/button1"));
-    private final UIElement titleCheck = E(byAndroidUIAutomator("textContains(\"OurGroceries\")"));
-    private final UIElement shoppingListCheck = E(byAndroidUIAutomator("textContains(\"Add a shopping list...\")"));
-    private final UIElement addRecipeCheck = E(byAndroidUIAutomator("textContains(\"Add a recipe\")"));
-    private final UIElement clickOnShopingList = E(byAndroidUIAutomator("textContains(\"First List\")"));
-    private final UIElement clickOnOptionButton = E(byAccesibilityId("More options"));
-    private final UIElement clickOnDeleteList = E(byAndroidUIAutomator("textContains(\"Delete list\")"));
+    private  UIElement shoppingListInput = E(byAndroidUIAutomator("textContains(\"Add a shopping list\")"));
+    private  UIElement inputShoppingList = E(byId("editText"));
+    private  UIElement addListButton = E(byId("android:id/button1"));
+    private  UIElement titleCheck = E(byAndroidUIAutomator("textContains(\"OurGroceries\")"));
+    private  UIElement shoppingListCheck = E(byAndroidUIAutomator("textContains(\"Add a shopping list...\")"));
+    private  UIElement addRecipeCheck = E(byAndroidUIAutomator("textContains(\"Add a recipe\")"));
+    private  UIElement clickOnShopingList = E(byAndroidUIAutomator("textContains(\"First List\")"));
+    private  UIElement clickOnOptionButton = E(byAccesibilityId("More options"));
+    private  UIElement clickOnDeleteList = E(byAndroidUIAutomator("textContains(\"Delete list\")"));
 
 
-    private final UIElement backArrow = E(byAccesibilityId("Navigate up"));
-    private final UIElement barCode = E(byId("menu.ScanBarcode"));
-    private final UIElement plusButton = E(byId("menu.AddItem"));
-    private final UIElement addItemInput = E(byId("android:id/text1"));
+    private  UIElement backArrow = E(byAccesibilityId("Navigate up"));
+    private  UIElement barCode = E(byId("menu.ScanBarcode"));
+    private  UIElement plusButton = E(byId("menu.AddItem"));
+    private  UIElement addItemInput = E(byId("android:id/text1"));
 
 
     public void checkShoppingList(String arg){

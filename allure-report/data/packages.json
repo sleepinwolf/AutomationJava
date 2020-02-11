@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Shopping list",
+    "children" : [ {
+      "name" : "Add shopping list",
+      "uid" : "47ce039e07e40d39",
+      "parentUid" : "92ec24d3316761ff694b51e513088191",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581415294460,
+        "stop" : 1581415313479,
+        "duration" : 19019
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "AOSP on IA Emulator", "9586", "9" ]
+    }, {
+      "name" : "Delete the shopping list",
+      "uid" : "6426e3498ed43402",
+      "parentUid" : "92ec24d3316761ff694b51e513088191",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581415313610,
+        "stop" : 1581415350837,
+        "duration" : 37227
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "AOSP on IA Emulator", "9586", "9" ]
+    } ],
+    "uid" : "92ec24d3316761ff694b51e513088191"
+  } ]
+}

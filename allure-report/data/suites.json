@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Shopping list",
+    "children" : [ {
+      "name" : "Add shopping list",
+      "uid" : "47ce039e07e40d39",
+      "parentUid" : "aba717f5f5509fe72db1827f55e958dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581415294460,
+        "stop" : 1581415313479,
+        "duration" : 19019
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "AOSP on IA Emulator", "9586", "9" ]
+    }, {
+      "name" : "Delete the shopping list",
+      "uid" : "6426e3498ed43402",
+      "parentUid" : "aba717f5f5509fe72db1827f55e958dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1581415313610,
+        "stop" : 1581415350837,
+        "duration" : 37227
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "AOSP on IA Emulator", "9586", "9" ]
+    } ],
+    "uid" : "aba717f5f5509fe72db1827f55e958dd"
+  } ]
+}
