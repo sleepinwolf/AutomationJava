@@ -17,6 +17,20 @@ public class LandingScreen {
     private final UIElement clickOnDeleteList = E(byAndroidUIAutomator("textContains(\"Delete list\")"));
 
 
+    private final UIElement backArrow = E(byAccesibilityId("Navigate up"));
+    private final UIElement barCode = E(byId("menu.ScanBarcode"));
+    private final UIElement plusButton = E(byId("menu.AddItem"));
+    private final UIElement addItemInput = E(byId("android:id/text1"));
+
+
+    public void checkShoppingList(String arg){
+        backArrow.waitFor(5).untilIsVisible();
+        barCode.waitFor(5).untilIsVisible();
+        plusButton.waitFor(5).untilIsVisible();
+        addItemInput.waitFor(5).untilIsVisible();
+        E(byAndroidUIAutomator("text(\""+arg+ "\")")).waitFor(5).untilIsVisible();
+    }
+
     public void checkLandingScreen(){
         titleCheck.waitFor(5).untilIsVisible();
         shoppingListCheck.waitFor(5).untilIsVisible();

@@ -42,6 +42,7 @@ public class LandingSteps {
     @When("I click on a {string}")
     public void iClickOnAShoppingList(String arg0) {
         landingScreen.clickOnShoppingList();
+        landingScreen.checkShoppingList(arg0);
         sleep(3000);
     }
 
