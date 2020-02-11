@@ -39,27 +39,37 @@ public class LandingSteps {
         sleep(3000);
     }
 
-    @When("I click on a shopping list")
-    public void iClickOnAShoppingList() {
+    @When("I click on a {string}")
+    public void iClickOnAShoppingList(String arg0) {
+        landingScreen.clickOnShoppingList();
+        sleep(3000);
     }
 
     @And("I click on the options button")
     public void iClickOnTheOptionsButton() {
-        
+        landingScreen.clickOnOptionButton();
+        sleep(3000);
     }
 
-    @And("I click the option {string}")
-    public void iClickTheOption(String arg0) {
-        
+    @And("I click the option Delete List")
+    public void iClickTheOption() {
+        landingScreen.setClickOnDeleteList();
+        sleep(3000);
     }
 
-    @And("I click on button {string}")
-    public void iClickOnButton(String arg0) {
-        
+    @And("I click on button DELETE LIST")
+    public void iClickOnButton() {
+        landingScreen.setClickOnDeleteList();
+        sleep(3000);
+
     }
 
 
     @Then("I see the {string} removed from from the landing screen")
     public void iSeeTheRemovedFromFromTheLandingScreen(String arg0) {
+    landingScreen.checkRemovedList(arg0);
+
     }
+
+
 }

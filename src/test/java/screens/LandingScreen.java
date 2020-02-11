@@ -2,8 +2,7 @@ package screens;
 
 import testUI.elements.UIElement;
 
-import static testUI.Utils.By.byAndroidUIAutomator;
-import static testUI.Utils.By.byId;
+import static testUI.Utils.By.*;
 import static testUI.elements.TestUI.E;
 
 public class LandingScreen {
@@ -13,14 +12,18 @@ public class LandingScreen {
     private final UIElement titleCheck = E(byAndroidUIAutomator("textContains(\"OurGroceries\")"));
     private final UIElement shoppingListCheck = E(byAndroidUIAutomator("textContains(\"Add a shopping list...\")"));
     private final UIElement addRecipeCheck = E(byAndroidUIAutomator("textContains(\"Add a recipe\")"));
+    private final UIElement clickOnShopingList = E(byAndroidUIAutomator("textContains(\"First List\")"));
+    private final UIElement clickOnOptionButton = E(byAccesibilityId("More options"));
+    private final UIElement clickOnDeleteList = E(byAndroidUIAutomator("textContains(\"Delete list\")"));
 
 
-    public void checkLandingScreen() {
+    public void checkLandingScreen(){
         titleCheck.waitFor(5).untilIsVisible();
         shoppingListCheck.waitFor(5).untilIsVisible();
         addRecipeCheck.waitFor(5).untilIsVisible();
-    }
 
+
+    }
     public void clickAddShoppingList() {
         shoppingListInput.click();
     }
@@ -37,5 +40,22 @@ public class LandingScreen {
     public void checkNewList(String arg) {
         UIElement element = E(byAndroidUIAutomator("textContains(\"" + arg + "\")"));
         element.waitFor(5).untilIsVisible();
+    }
+
+    public void clickOnShoppingList(){
+        clickOnShopingList.click();
+
+    }
+
+    public void clickOnOptionButton(){
+        clickOnOptionButton.click();
+    }
+    public void setClickOnDeleteList(){
+        clickOnDeleteList.click();
+    }
+
+    public void checkRemovedList(String arg){
+        UIElement checkList = E(byAndroidUIAutomator("textContains(\"" + arg + "\")"));
+        checkList.waitFor(5).untilNotVisible();
     }
 }
